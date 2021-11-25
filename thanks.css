@@ -73,7 +73,7 @@ a{
     padding-top: 50px;
     width: 100%;
     height: 50%;
-    background-color: beige;
+    background-color: white;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -83,7 +83,7 @@ img.poster{
 }
 
 .sermon{
-    background-color: beige;
+    background-color: white;
     width: 100%;
     height: 10%;
     padding: 10px 0px;
@@ -187,6 +187,13 @@ button:hover{
 .structure h2{
     font-size: 20px;
 }
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: #482ff7;
+    margin-top: 50px;
+}
 
 /* CONTACT US PAGE */
 
@@ -220,8 +227,73 @@ button:hover{
     text-align: center;
 }
 .form{
+    margin-left: 500px;
     align-items: center;
+    
+   
 }
+.form-container{
+    
+}
+input[type=text], {
+    width: 100%;
+}
+
+/* SERMON PAGE */
+
+.sub{
+    width: 100%;
+    margin-top: 60px;
+    padding-left: 30px;
+    
+}
+
+.front{
+    
+}
+
+.front h1{
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 510px; 
+    font-size: 350%;
+    font-weight: 200;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.front h4{
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.cervix{
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+   
+}
+.up{
+    border-bottom: 1px solid black;
+}
+.video{
+    margin-left: 400px;
+    padding-top: 50px;
+}
+
+.video video{
+    width: 50%;
+    height: 50%;
+}
+
+.words{
+    margin-left: 400px;
+}
+.words h1{
+    font-size: 200%;
+}
+
 
 @media only screen and (max-width: 768px){
     .nav-menu {
@@ -329,6 +401,63 @@ button:hover{
     .word h4{
         text-align: center;
     }
+
+    /* SERMON PAGE */
+    .sub{
+        width: 100%;
+        margin-top: 60px;
+        padding: 23px;
+
+    }
+    .front{
+        line-height: 1pc;
+        width: 80%;
+    }
+    .front h1{
+        line-height: 1.5;
+        margin-bottom: 20px;
+        margin-left: 100px;
+        /* margin-right: 600px; */
+        font-size: xx-large;
+        font-weight: 100;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .front h4{
+        font-weight: 500;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-left: 70px;
+        font-size: 120%;
+        line-height: 25px;
+    }
+    .dot{
+        font-size: 150%;
+    }
+
+    .cervix {
+        margin-top: 70px;
+    }
+    .up {
+        border-bottom: 0.9px solid black;
+    }
+    .video{
+        width: 90%;
+        height: 80%;
+        margin-left: 50px;
+        /* padding-left: 22px; */
+    }
+    .video video{
+         width: 75%; 
+    }
+    .words {
+        padding: 30px;
+        margin-left: 50px;
+    }
+    .words h1{
+        font-size:x-large;
+        
+    }
+    
+
   
 }
 
