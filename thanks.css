@@ -232,12 +232,13 @@ button:hover{
     
    
 }
-.form-container{
+
+/* .form-container{
     
 }
 input[type=text], {
     width: 100%;
-}
+} */
 
 /* SERMON PAGE */
 
@@ -373,10 +374,14 @@ input[type=text], {
         text-align: center;
     }
 
-    /* CONTACT US PAGE */
+    /* ABOUT US PAGE */
 
     .first{
         margin-top: 80px;
+        width: 100%;
+    }
+
+    .find {
         width: 100%;
     }
     .find img{
@@ -389,6 +394,7 @@ input[type=text], {
 
     .word{
         width: 100%;
+        margin-right: 60%;
     }
     .word h1{
         font-size: xx-large;
@@ -401,6 +407,30 @@ input[type=text], {
     .word h4{
         text-align: center;
     }
+    .contact-form{
+        width: 100%;
+        padding-left: 100px;
+        /* margin-right: 100%; */
+    }
+    .about-us h1{
+        font-size: xx-large;
+        color: cornflowerblue;
+        align-items: center;
+        margin-left: 30%;
+    }
+    .form-container{
+        width: 300x;
+        margin-right: 100px;
+    }
+    .form-container input:first-child{
+        display: inline-block;
+        width: 120%;
+        padding: 14px 130px 14px 15px;
+        border: 2px solid #f9004d;
+        outline: none;
+        border-radius: 30px;
+    }
+ 
 
     /* SERMON PAGE */
     .sub{
@@ -456,6 +486,31 @@ input[type=text], {
         font-size:x-large;
         
     }
+
+    /* EVENTS PAGE */
+    .event{
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .event-flyer{
+        width: 100%;
+    }
+    .event-flyer img{
+        margin-left: 10%;
+        width: 80%;
+        
+    }
+
+    .writeup h2{
+        margin-top: 20px;
+        margin-left: 10%;
+    }
+    .writeup h4 {
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+
     
 
   
