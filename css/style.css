@@ -1,17 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Roboto+Slab:wght@200;300;400;500;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 13px;
 }
 html{
-    font-size: 62.5%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:10px;
+    font-family: 'Lato', sans-serif;
 
 }
-body{
-    height: 100%;
-    overflow: auto;
+.papa{
+    overflow-x: hidden;
 }
 
 li{
@@ -25,10 +25,23 @@ a{
 }
 .navbar{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
+    justify-content: flex-start;
+    /* align-items: center; */
+    padding: 2% 5%;
+    background:#acc;
+    position: sticky;
+    top: 0px;
+    z-index: 8999;
 }
+.navbar>ul li a{
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+.navbar>a{
+    margin-right: 100px;
+    /* background: chartreuse; */
+}
+
 .hamburger{
     display: none;
 }
@@ -41,6 +54,9 @@ a{
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #101010;
+}
+.nav-menu .active-link{
+    color: #482ff7;
 }
 .nav-menu {
     display: flex;
@@ -72,122 +88,110 @@ a{
 .main{
     padding-top: 50px;
     width: 100%;
-    height: 50%;
+     height: 50%;
     background-color: white;
     padding-left: 5%;
     padding-right: 5%;
 }
-* {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
-  /* max-width: 60%; */
-  width: 50%;
-  position: relative;
-  margin-top: 50%;
+
+.img-slider{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
 }
-
 /* Make the images invisible by default */
-.Containers {
-  display: none;
-  margin-top: 2%;
-  width: 70%;
-  justify-items: center;
-  margin-left: 15%;
-  height: 10%;
+.img-slider .slider-container {
+    position: absolute;
+    width: 300%;
+    top: 0;
+    left: 0;
+    right:0;
+    /* overflow: hidden; */
+    display: flex;
+    animation: slider 13s infinite;
 }
+.img-slider .slider-container .slide {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 100%;
+    /* float: left; */
+}
+.img-slider .slider-container .slide img {
+    display: block;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+  }
+  @keyframes slider {
+      0%, 25%, 100%{left: 0}
+      
+      30%, 55%{left: -100%}
+      
+      60%, 85%{left: -200%}
+  }
+  
 
-/* forward & Back buttons */
-.Back, .forward {
-  cursor: pointer;
-  position: absolute;
-  top: 48%;
-  width: auto;
-  margin-top: -23px;
-  padding: 17px;
-  color: grey;
-  font-weight: bold;
-  font-size: 19px;
-  transition: 0.4s ease;
-  border-radius: 0 5px 5px 0;
-  user-select: none;
-}
-
-/* Place the "forward button" to the right */
-.forward {
-  right: 0;
-  border-radius: 4px 0 0 4px;
-}
-
-/*when the user hovers,add a black background with some little opacity */
-.Back:hover, .forward:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption Info */
-.Info {
-  color: #e3e3e3;
-  font-size: 16px;
-  padding: 10px 14px;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Worknumbering (1/3 etc) */
-.MessageInfo {
-  color: #f2f2f3;
-  font-size: 14px;
-  padding: 10px 14px;
-  position: absolute;
-  top: 0;
-}
-
-/* The circles or bullets and indicators */
-.dots {
-  cursor: pointer;
-  height: 16px;
-  width: 16px;
-  margin: 0 3px;
-  background-color: #acc;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.5s ease;
-}
-
-.enable, .dots:hover {
-  background-color: #717161;
-}
-
-/* Faint animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.4s;
-  animation-name: fade;
-  animation-duration: 1.4s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .5}
-  to {opacity: 2}
-}
-
-@keyframes fade {
-  from {opacity: .5}
-  to {opacity: 2}
-}
 /* img.poster{
     width: 100%;
     height: 500px;
 } */
+/* INTRO */
+.main{
+    background: rgba(211, 210, 229, 0.761);
+}
+.intro{
+    margin-top: 5%;
+    padding: 2%;    
+}
+.intro .intro-flex{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.intro .intro-flex div{
+    max-width: 30%;
+    margin-right: 3px;
+    /* background: lightslategrey; */
+}
+.intro h2{
+    font-size:25px;
+    margin-bottom: 4%;
+}
+.intro p, .intro button{
+    font-size: large;
+    margin-top: 8px;
+    /* background: red; */
+    
+}
+button{
+    padding: 10px;
+    background-color: #7800f9;
+    color: white;
+    /* text-decoration: none; */
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    /* transition: .4s; */
+    /* margin-top: 60px; */
+}
+button:hover{
+    background-color: transparent;
+    color: #7800f9;
+    border: 2px solid #7800f9;
+    cursor: pointer;
+}
 
 .sermon{
-    background-color: white;
+    background: rgba(211, 210, 229, 0.761);
     width: 100%;
-    height: 10%;
-    padding: 10px 0px;
-    padding-top: 60px;
+    margin-top: 5%;
+    padding-top: 20px !important;
+    padding: 0px ;
+    box-shadow: 0 0 20px 2px rgb(142 142 142 / 25%);
     /* margin-bottom: 40px; */
 }
 .sermon p{
@@ -221,19 +225,15 @@ a{
 .button{
     background-color: #f9004d;
     color: white;
-    text-decoration: none;
+    /* text-decoration: none; */
     border: 1px solid transparent;
     font-weight: bold;
     padding: 10px 10px;
     border-radius: 5px;
-    transition: .4s;
-    margin-top: 60px;
+    /* transition: .4s; */
+    
 }
-button:hover{
-    background-color: transparent;
-    border: 2px solid #f9004d;
-    cursor: pointer;
-}
+
 .testimony{
     justify-items: center;
     width: 100%;
@@ -321,7 +321,6 @@ button:hover{
     align-items: center;
     justify-content: center;
     margin-left: 400px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .word h4{
     text-align: center;
@@ -360,7 +359,7 @@ input[type=text], {
     margin-left: 510px; 
     font-size: 350%;
     font-weight: 200;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 .front h4{
     font-weight: 500;
@@ -396,21 +395,26 @@ input[type=text], {
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 900px){
+    .navbar{
+        justify-content: space-between;
+    }
     .nav-menu {
         position: absolute;
         left: -100px;
         top: 5rem;
         flex-direction: column;
-        background-color: white;
+        background:#acc;
+        /* background-color: white; */
         display: none;
         width: 100%;
-        border-radius: 10px;
+        /* border-radius: 10px; */
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
 
     }
+
     .nav-menu.active {
         left: 0;
         display: block;
@@ -434,23 +438,24 @@ input[type=text], {
 
     /* CAROUSEL  */
 
-    * {box-sizing:border-box}
+
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  /* max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin: auto; */
 }
 
 /* Make the images invisible by default */
 .Containers {
-  display: none;
+  /* display: none; */
+  /* display: block; */
 }
 
 /* forward & Back buttons */
 .Back, .forward {
-  cursor: pointer;
+  /* cursor: pointer;
   position: absolute;
   top: 48%;
   width: auto;
@@ -461,72 +466,72 @@ input[type=text], {
   font-size: 19px;
   transition: 0.4s ease;
   border-radius: 0 5px 5px 0;
-  user-select: none;
+  user-select: none; */
 }
 
 /* Place the "forward button" to the right */
 .forward {
-  right: 0;
-  border-radius: 4px 0 0 4px;
+  /* right: 0;
+  border-radius: 4px 0 0 4px; */
 }
 
 /*when the user hovers,add a black background with some little opacity */
 .Back:hover, .forward:hover {
-  background-color: rgba(0,0,0,0.8);
+  /* background-color: rgba(0,0,0,0.8); */
 }
 
 /* Caption Info */
 .Info {
-  color: #e3e3e3;
+  /* color: #e3e3e3;
   font-size: 16px;
   padding: 10px 14px;
   position: absolute;
   bottom: 10px;
   width: 100%;
-  text-align: center;
+  text-align: center; */
 }
 
 /* Worknumbering (1/3 etc) */
 .MessageInfo {
-  color: #f2f2f3;
+  /* color: #f2f2f3;
   font-size: 14px;
-  padding: 10px 14px;
-  position: absolute;
-  top: 0;
+  padding: 10px 14px; */
+  /* position: absolute; */
+  /* top: 0; */
 }
 
 /* The circles or bullets and indicators */
 .dots {
-  cursor: pointer;
+  /* cursor: pointer;
   height: 16px;
   width: 16px;
   margin: 0 3px;
   background-color: #acc;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease; */
 }
 
-.enable, .dots:hover {
+/* .enable, .dots:hover {
   background-color: #717161;
-}
+} */
 
 /* Faint animation */
 .fade {
-  -webkit-animation-name: fade;
+  /* -webkit-animation-name: fade;
   -webkit-animation-duration: 1.4s;
   animation-name: fade;
-  animation-duration: 1.4s;
+  animation-duration: 1.4s; */
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .5}
-  to {opacity: 2}
+  /* from {opacity: .5}
+  to {opacity: 2} */
 }
 
 @keyframes fade {
-  from {opacity: .5}
-  to {opacity: 2}
+  /* from {opacity: .5}
+  to {opacity: 2} */
 }
     img.poster{
         width: 100%;
@@ -599,7 +604,6 @@ input[type=text], {
         align-items: center;
         justify-content: center;
         margin-left: 30%;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     .word h4{
         text-align: center;
@@ -616,7 +620,7 @@ input[type=text], {
         margin-left: 38%;
     }
     .fcf-form-class {
-        font-family: -apple-system, Arial, sans-serif;
+
         font-size: 1rem;
         font-weight: 400;
         color: #0000ff;
@@ -686,11 +690,10 @@ input[type=text], {
         /* margin-right: 600px; */
         font-size: xx-large;
         font-weight: 100;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
     }
     .front h4{
         font-weight: 500;
-        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         margin-left: 70px;
         font-size: 120%;
         line-height: 25px;
