@@ -23,6 +23,28 @@ a{
 .header{
     border-bottom: 1px solid #e2e8f0;
 }
+button, .box a{
+    padding: 10px;
+    background-color: #7800f9;
+    color: white;
+    /* text-decoration: none; */
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 3px 0 0 #7800, 0 4px 4px -1px rgb(0 0 0 / 60%), 0 4px 6px 1px rgb(0 0 0 / 30%), 0 1px 2px 1px rgb(0 0 0 / 0%) inset, 0 18px 32px -2px rgb(255 255 255 / 10%) inset;
+    /* transition: .4s; */
+    /* margin-top: 60px; */
+}
+.btn-larg{
+    padding:8px 20px ;
+    font-size: 25px;
+    /* display: none; */
+}
+
+
+p, small{
+    color: rgb(46, 41, 41);
+}
 .navbar{
     display: flex;
     justify-content: flex-start;
@@ -86,12 +108,7 @@ a{
     color: red;
 }
 .main{
-    padding-top: 50px;
-    width: 100%;
-     height: 50%;
-    background-color: white;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 2%;
 }
 
 
@@ -153,7 +170,7 @@ a{
     text-align: center;
 }
 .intro .intro-flex div{
-    max-width: 30%;
+    flex-basis: 29%;
     margin-right: 3px;
     /* background: lightslategrey; */
 }
@@ -167,126 +184,139 @@ a{
     /* background: red; */
     
 }
-button{
-    padding: 10px;
-    background-color: #7800f9;
-    color: white;
-    /* text-decoration: none; */
-    border: 1px solid transparent;
-    border-radius: 5px;
-    cursor: pointer;
-    /* transition: .4s; */
-    /* margin-top: 60px; */
-}
-button:hover{
+
+button:hover, .box a:hover{
     background-color: transparent;
     color: #7800f9;
     border: 2px solid #7800f9;
     cursor: pointer;
 }
 
-.sermon{
+.sermon, .events, .testimony{
     background: rgba(211, 210, 229, 0.761);
     width: 100%;
     margin-top: 5%;
-    padding-top: 20px !important;
-    padding: 0px ;
+    padding-top: 20px;
+    /* background: red; */
+    padding-bottom: 20px ;
+    /* padding: 0px ; */
     box-shadow: 0 0 20px 2px rgb(142 142 142 / 25%);
     /* margin-bottom: 40px; */
 }
-.sermon p{
-    font-size: 1000;
-    font-weight: bold;
+ /* sermon */
+.sermon, .events, .testimony{
+    text-align: center;
+    font-size: medium;
+}
+.sermon .title, .events .title,.testimony .title{
+    margin-bottom: 2%;
+}
+.sermon p, .events p, .testimony p{
+    /* font-size: 1000; */
+    font-weight: normal;
 }
 .title h2{
     color: rgb(14, 1, 1);
     font-size: 30px;
-    margin: 30px auto;
+    margin: 10px;
     text-align: center;
 }
 .box{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 400px;
-    padding-left: 40px;
-
+    justify-content: space-around;
+    margin-bottom: 50px;
 }
 .card{
-    padding: 20px 35px;
-    height: 400px;
-    width: 500px;
+    /* background-color: #475569; */
+    margin-right: 5px;
+    width: 350px;
 }
-
-.sermon a{
-    /* margin-top: 20px; */
-}
-
-.button{
-    background-color: #f9004d;
-    color: white;
-    /* text-decoration: none; */
-    border: 1px solid transparent;
-    font-weight: bold;
-    padding: 10px 10px;
-    border-radius: 5px;
-    /* transition: .4s; */
-    
-}
-
-.testimony{
-    justify-items: center;
+.card img{
     width: 100%;
-    height: 50px;
-    
-    /* border: 1px solid black; */
-    
-}
+    height: 200px;
 
-.testimony h2{
-    text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 8px
+}
+.card h2{
+    font-size: 20px;
+
+}
+.card p{
+    font-size: 15px;
+    text-align: justify;
+}
+/* upcoming events */
+.event-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1%;
+}
+.event-flex .event-div{
+    display: flex;
+    flex-basis: 48%;
+    margin-bottom: 4%;
+    
+}   
+
+.event-flex .event-div img{
+    width: 250px;
+    height: 300px;
+    margin-right: 2%;
+}
+.event-flex .event-div .event-detail{
     margin-top: 20px;
+    /* justify-self: left; */
+    text-align: left;
+}
+.event-flex .event-div .event-detail h3{
+    margin-bottom: 5px;
+    /* justify-self: left; */
+}
+.event-flex .event-div .event-detail .event-dateset{
+    margin-bottom: 20px;
+
+    /* justify-self: left; */
+}
+.event-flex .event-div .event-detail .event-dateset div{
+    
+    font-weight: bold;
+    /* justify-self: left; */
+}
+.event-flex .event-div .event-detail .event-dateset div span{
+    
+    color: indigo;
+    /* justify-self: left; */
+}
+.event-flex .event-div .event-detail .event-branch{
+    
+    margin-bottom: 10px;
+    /* justify-self: left; */
 }
 
-.structure {
-    width: 100%;
-    padding: 0 20px;
+/* .testimony */
+.testimony .testi-flex{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
 }
-.structure p{
-    width: 100%;
-    padding: 3% 0;
+.testimony .testi-flex div{
+    flex-basis: 30%;
 }
-
- .top-left, .top-right{
-    justify-content: center;
-    width: 50%;
-    border: 2px solid;
-    border-top: transparent;
-    border-left: transparent;
-    border-right: transparent;
-    margin: 30px 0;
-    margin-left: 350px;
-
-
-} 
-
-.testimonies{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.testimony .testi-flex .who, .testimony .testi-flex p{
+    text-align: right;
 }
-.testimonies div{
-    padding-right: 30px;
+.testimony .testi-flex .testi{
+    font-weight: normal;
     font-style: italic;
 }
-.testimonies div .test-name{
-    text-align: right;
-    /* background: royalblue; */
-    padding-top: 0;
+.testimony .testi-flex .who{
+    margin-top: 5px;
 }
-.structure h2{
-    font-size: 20px;
-}
+
+
+
+
 .footer{
     position: absolute;
     width: 100%;
@@ -436,147 +466,122 @@ input[type=text], {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    /* CAROUSEL  */
-
-
-
 /* Slideshow container */
-.slideshow-container {
-  /* max-width: 1000px;
-  position: relative;
-  margin: auto; */
+.intro .intro-flex{
+    flex-direction: column;
+}
+.intro{
+    margin-top: 30px;
+    text-align: center;
+}
+.intro .intro-flex div{
+    flex-basis: 100%;
+    margin-top: 30px;
+    margin-right: 0;
+    /* background: lightslategrey; */
+}
+.sermon, .events, .testimony{
+    
+    margin-top: 60px;
+    padding-top: 20px;
+    
+    padding-bottom: 20px ;
+    /* margin-bottom: 40px; */
+}
+.sermon .title, .events .title,.testimony .title{
+    margin-bottom: 30px;
+} 
+.sermon p, .events p, .testimony p{
+    /* font-size: 1000; */
+    text-align: left;
+ 
+    font-size: 18px;
+}
+.title h2{
+    /* font-size: 1000; */
+    margin-bottom: 30px;
+    text-align: left;
+
+}
+.box{
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: space-around; */
+    margin-bottom: 30px;
+}
+.card{
+    /* background-color: #475569; */
+    margin-right: 0;
+    flex-basis: 100%;
+    margin-bottom: 80px;
+    /* background: red; */
+}
+.card img{
+    margin-bottom: 20px
+}
+.card h2{
+    margin-bottom: 20px;
+    text-align: left;
+}
+.card p{
+    margin-bottom: 10px;
+}
+.btn-larg{
+    padding:8px 20px ;
+    font-size: 25px;
+    /* display: none; */
+}
+button, .box a{
+    padding: 10px 30px;
+    /* text-decoration: none; */
+    /* margin-top: 60px; */
+}
+.event-flex{
+    flex-direction: column;
+    padding: 0;
+}
+.event-flex .event-div{
+    display: block;
+    flex-basis: 100%;
+    margin: 2%;
+    margin-bottom: 4%;
+    
+    
+}   
+
+.event-flex .event-div img{
+    width: 100%;
+    height: 300px;
+    margin-right: 2%;
 }
 
-/* Make the images invisible by default */
-.Containers {
-  /* display: none; */
-  /* display: block; */
+.event-flex .event-div, .event-detail{
+    margin-top: 20px;
+    /* justify-self: left; */
+    text-align: left;
+}
+.event-div .event-detail .event-branch{
+    
+    margin-bottom: 20px;
+    /* justify-self: left; */
+}
+.event-flex {
+    margin-bottom: 50px;
+/* background: red; */
+}
+.testimony .testi-flex{
+    margin-top: 5%;
+    flex-direction: column;
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+.testimony .testi-flex div{
+    flex-basis: 100%;
+    margin-bottom: 20px;
 }
 
-/* forward & Back buttons */
-.Back, .forward {
-  /* cursor: pointer;
-  position: absolute;
-  top: 48%;
-  width: auto;
-  margin-top: -23px;
-  padding: 17px;
-  color: grey;
-  font-weight: bold;
-  font-size: 19px;
-  transition: 0.4s ease;
-  border-radius: 0 5px 5px 0;
-  user-select: none; */
-}
 
-/* Place the "forward button" to the right */
-.forward {
-  /* right: 0;
-  border-radius: 4px 0 0 4px; */
-}
-
-/*when the user hovers,add a black background with some little opacity */
-.Back:hover, .forward:hover {
-  /* background-color: rgba(0,0,0,0.8); */
-}
-
-/* Caption Info */
-.Info {
-  /* color: #e3e3e3;
-  font-size: 16px;
-  padding: 10px 14px;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center; */
-}
-
-/* Worknumbering (1/3 etc) */
-.MessageInfo {
-  /* color: #f2f2f3;
-  font-size: 14px;
-  padding: 10px 14px; */
-  /* position: absolute; */
-  /* top: 0; */
-}
-
-/* The circles or bullets and indicators */
-.dots {
-  /* cursor: pointer;
-  height: 16px;
-  width: 16px;
-  margin: 0 3px;
-  background-color: #acc;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.5s ease; */
-}
-
-/* .enable, .dots:hover {
-  background-color: #717161;
-} */
-
-/* Faint animation */
-.fade {
-  /* -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.4s;
-  animation-name: fade;
-  animation-duration: 1.4s; */
-}
-
-@-webkit-keyframes fade {
-  /* from {opacity: .5}
-  to {opacity: 2} */
-}
-
-@keyframes fade {
-  /* from {opacity: .5}
-  to {opacity: 2} */
-}
-    img.poster{
-        width: 100%;
-        height: 400px;
-
-    }
-    .main{
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    .sermon{
-        height: 20%;
-    }
-
-    .box{
-        display: inline-block;
-        align-items: center;
-    }
-
-    .card{
-        width: 100%;
-        height: 350px;
-        top: 200px;
-    }
-    .title h2{
-        font-size: 25px;
-        
-    }
-
-    .top-left, .top-right{
-        
-        border: 2px solid;
-        border-top: transparent;
-        border-left: transparent;
-        border-right: transparent;
-        margin: auto auto;
-        border-color: grey;
-    }
-    .testimonies{
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    /* ABOUT US PAGE */
+/* ABOUT US PAGE */
 
     .first{
         margin-top: 80px;
