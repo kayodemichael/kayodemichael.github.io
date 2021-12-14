@@ -25,7 +25,7 @@ a{
 }
 button, .box a{
     padding: 10px;
-    background-color: #7800f9;
+    background-color: #c00808f6;
     color: white;
     /* text-decoration: none; */
     border: 1px solid transparent;
@@ -41,29 +41,29 @@ button, .box a{
     /* display: none; */
 }
 
-
-p, small{
-    color: rgb(46, 41, 41);
-}
 .navbar{
     display: flex;
     justify-content: flex-start;
     /* align-items: center; */
     padding: 2% 5%;
-    background:#acc;
+    background: rgb(19, 186, 188);
     position: sticky;
     top: 0px;
     z-index: 8999;
 }
 .navbar>ul li a{
-    font-weight: 800;
+    font-weight: 600;
     font-size: 1.7rem;
+color: white;
 }
 .navbar>a{
     margin-right: 100px;
     /* background: chartreuse; */
 }
-
+@keyframes drop {
+    0% { top: -100px; }
+    100% { top: 0px; }
+}
 .hamburger{
     display: none;
 }
@@ -78,7 +78,7 @@ p, small{
     background-color: #101010;
 }
 .nav-menu .active-link{
-    color: #482ff7;
+    color: #c00808f6;
 }
 .nav-menu {
     display: flex;
@@ -91,15 +91,15 @@ p, small{
 }
 .nav-link{
     font-size: 1.6rem;
-    font-weight: 400;
+    /* font-weight: 400; */
     color: #475569;
 
 }
 .nav-link:hover {
-    color: #482ff7;
+    color: #c00808f6;
 }
 .nav-logo {
-    font-weight: 500;
+    /* font-weight: 500; */
     font-size: 2.1rem;
     color: #482ff7;
 }
@@ -119,7 +119,7 @@ p, small{
     max-width: 100%;
     overflow: hidden;
 }
-/* Make the images invisible by default */
+
 .img-slider .slider-container {
     position: absolute;
     width: 300%;
@@ -187,8 +187,8 @@ p, small{
 
 button:hover, .box a:hover{
     background-color: transparent;
-    color: #7800f9;
-    border: 2px solid #7800f9;
+    color: #c00808f6;
+    border: 2px solid #c00808f6;
     cursor: pointer;
 }
 
@@ -243,7 +243,9 @@ button:hover, .box a:hover{
 }
 .card p{
     font-size: 15px;
-    text-align: justify;
+    text-align: justify;    
+    color: rgb(46, 41, 41);
+    
 }
 /* upcoming events */
 .event-flex{
@@ -285,7 +287,12 @@ button:hover, .box a:hover{
 }
 .event-flex .event-div .event-detail .event-dateset div span{
     
-    color: indigo;
+    color: #b7244e;;
+    /* justify-self: left; */
+}
+.event-flex .event-div .event-detail .event-dateset div small{
+    color: #475569;
+    
     /* justify-self: left; */
 }
 .event-flex .event-div .event-detail .event-branch{
@@ -295,6 +302,9 @@ button:hover, .box a:hover{
 }
 
 /* .testimony */
+.testimony{
+    /* background-color: red; */
+}
 .testimony .testi-flex{
     margin-top: 5%;
     display: flex;
@@ -306,6 +316,34 @@ button:hover, .box a:hover{
 .testimony .testi-flex .who, .testimony .testi-flex p{
     text-align: right;
 }
+.testimony .testi-slider{
+    position: relative;
+    width: 100vw;
+    height: 45vh;
+    max-width: 100%;
+    overflow: hidden;
+}
+.testi-slider .testi-flex{
+    position: absolute;
+    width: 300%;
+    justify-content:left;
+    /* margin-right: 1000px; */
+    top: 0;
+
+    /* background-color: red; */
+    left: 0;
+    right: 0;
+    animation: testiSlider 12s infinite;
+    display: flex;
+}
+.testi-flex .testi-div{
+    /* flex-basis: 0.5%; */
+    margin-right: 2%;
+    max-width: 10%;
+    /* background: rebeccapurple; */
+    /* display: none; */
+    /* max-width: 3; */
+}
 .testimony .testi-flex .testi{
     font-weight: normal;
     font-style: italic;
@@ -313,17 +351,106 @@ button:hover, .box a:hover{
 .testimony .testi-flex .who{
     margin-top: 5px;
 }
-
-
-
-
-.footer{
-    position: absolute;
-    width: 100%;
-    height: 20%;
-    background-color: #482ff7;
-    margin-top: 50px;
+.testimony button{
+    font-size: 15px;
 }
+@keyframes testiSlider {
+    0%,5%, 100%{left: 0}
+    30%{left:-37%}
+    60%{left: -74%}
+    90%{left: -111%}
+    /* 60%{left: -99%} */
+    /* 80%{left: -132%} */
+    /* 60%{left: -108%}
+    80%{left: -144%} */
+}
+
+
+.page-footer{
+    padding-top: 3%;
+    padding-bottom: 0;
+    background: rgb(6, 112, 114);
+    font-size: 20px;
+    color: #ccc
+    /* font-weight: normal; */
+
+}
+.page-footer h5{
+    margin-bottom: 20px;
+}
+.page-footer p, .page-footer a{
+    font-size: 15px;
+    color: #ccc
+}
+.page-footer button:hover{
+    background: white !important;
+}
+.page-footer a:hover{
+    /* font-size: 17px; */
+    font-weight: bold;   
+    color:#c00808f6;
+}
+.page-footer .footer-first-div{
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    margin-bottom: 80px;
+}
+.page-footer .footer-news{
+    margin-top: 30px;
+    
+    /* width: inherit; */
+}
+.footer-summary .footer-icons{
+    margin-top: 10px;
+}
+.page-footer .newsletter{
+    position: relative;
+    display: flex;
+    height: 40px;  
+    /* background: rebeccapurple; */
+}
+.footer-news h6{
+    margin-bottom: 6px;
+}
+.page-footer .newsletter input{
+    height: 100%;
+    /* float: left; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding-left: 4px;
+    padding-right: 120px;
+}
+.page-footer button{
+    position: absolute;
+    right: 20%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 100%;
+}
+/* .navigation{
+
+} */
+.navigation .list-unstyled li, .contact .list-unstyled li{
+    margin-bottom: 10px;
+}
+.footer-copyright{
+    background: rgba(4, 69, 70, 0.693);
+    text-align: center;
+    padding: 40px;
+}
+
+.footer-icons i{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
 
 /* CONTACT US PAGE */
 
@@ -425,7 +552,7 @@ input[type=text], {
 }
 
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1000px){
     .navbar{
         justify-content: space-between;
     }
@@ -569,16 +696,84 @@ button, .box a{
     margin-bottom: 50px;
 /* background: red; */
 }
-.testimony .testi-flex{
-    margin-top: 5%;
+
+.testimony .testi-slider{
+    position: relative;
+    height: 40vh;
+    /* overflow: hidden; */
+}
+.testi-slider .testi-flex{
+    /* animation: none; */
+/* anima */
+    /* animation-timing-function: 2s; */
+    animation: testiSlider 30s infinite;
+}
+.testi-flex .testi-div{
+    max-width: 90vw;
+    min-width: 90vw;
+    text-align: justify;
+}
+@keyframes testiSlider {
+    0%, 10%, 100%{left: 0}
+    25%{left:-100%}
+    40%{left: -200%}
+    55%{left: -300%}
+    70%{left: -400%}
+    85%{left: -500%}
+    /* 90%{left: -111%} */
+}
+
+.page-footer{
+
+    padding-top: 40px;
+    /* font-weight: normal; */
+
+}
+
+.page-footer .footer-first-div{
+    padding: 5%;
     flex-direction: column;
-    /* display: flex; */
-    /* justify-content: space-around; */
+    margin-bottom: 50px;
 }
-.testimony .testi-flex div{
-    flex-basis: 100%;
-    margin-bottom: 20px;
+.page-footer .footer-first-div> div{
+    margin-bottom: 30px;
 }
+.page-footer .footer-news{
+    margin-top: 30px;
+    
+    /* width: inherit; */
+}
+.footer-summary .footer-icons{
+    margin-top: 10px;
+}
+.page-footer .newsletter{
+    position: relative;
+    display: flex;
+    height: 40px;  
+    /* background: rebeccapurple; */
+}
+.footer-news h6{
+    margin-bottom: 6px;
+}
+.page-footer .newsletter input{ 
+
+    padding-left: 4px;
+    padding-right: 120px;
+}
+.page-footer button{
+    right: 8%;
+ 
+}
+.footer-icons i{
+    margin-right: 10px;
+}
+/* .navigation{
+} */
+.navigation .list-unstyled li, .contact .list-unstyled li{
+    margin-bottom: 10px;
+}
+
+
 
 
 /* ABOUT US PAGE */
@@ -633,7 +828,7 @@ button, .box a{
         margin-left: 5%;
     }
 
-    input[type=text], select, textarea{
+    /* input[type=text], select, textarea{
         width: 100%;
         padding: 12px;
         border: 1px solid #ccc;
@@ -642,7 +837,7 @@ button, .box a{
         margin-top: 6px;
         margin-bottom: 16px;
         resize: vertical;
-      }
+      } */
 
       input[type=email], select, textarea {
         width: 100%;
@@ -656,13 +851,13 @@ button, .box a{
       }
 
       
-      button[type=submit] {
+      /* button[type=submit] {
         background-color: #5DADE2;
         color: white;
         padding: 12px 20px;
         border: none;
         border-radius: 4px;
-      }
+      } */
     /* .form-container{
         width: 300x;
         margin-right: 100px;
