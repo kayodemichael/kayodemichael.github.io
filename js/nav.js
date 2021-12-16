@@ -12,3 +12,14 @@ function start() {
       navMenu.classList.toggle("active");
     }
 }
+function activeLink(){
+  var title= document.querySelector('title').textContent.split('-')[0].trim()
+  console.log(title)
+  // console.log(title)
+  var navLinks = document.querySelectorAll(".nav-link");
+  navLinks.forEach(link => {
+    if(title==link.textContent){
+      link.classList+=' active-link'
+    }
+  });
+}
