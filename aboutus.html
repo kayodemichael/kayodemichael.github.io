@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="thanks.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="app.js"></script>
     <title>Document</title>
 </head>
@@ -45,7 +46,7 @@
         </div>
 
         <div class="about-us">
-            <h1>ABOUT US</h1>
+            <h2>ABOUT US</h2>
         </div>
 
        <div class="word">
@@ -64,9 +65,11 @@
                 <input type="text" id="Name" name="Name" class="fcf-form-control" required>
             </div>
         <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
+            <!-- <label for="Email" class="fcf-label">Your email address</label> -->
+            <label for="tel"  class="fcf-label">Enter your phone number</label>
             <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                <input type="tel" name="Phone" id="phone" autocomplete="off" class="fcf-form-control" required>
+                <!-- <input type="email" id="Email" name="Email" class="fcf-form-control" required> -->
             </div>
         <div class="fcf-form-group">
             <label for="Message" class="fcf-label">Your message</label>
@@ -79,27 +82,12 @@
         </div>
     </form>
 
+    <div class="social">
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-dribble"></i></a>
+    </div>
 
-       <!-- <div class="contact-form">
-            <div class="form-container">
-                <form action="" method="">
-                    <div class="name">
-                        <input type="text" name="Name" autocomplete="off" required>
-                        <label for="name"><b>Name</b></label>
-                    </div>
-                   
-                    <div class="input-bx">
-                        <input type="tel" name="Phone" id="phone" autocomplete="off" required>
-                        <label for="tel"><b>Enter your phone number</b></label>
-                    </div>
-                    
-                    <div class="input-bx">
-                        <textarea name="Message" id="" cols="30" rows="10" aria-label="message">Message Us</textarea>
-                    </div>
-                    <button type="submit" class="registerbtn">Contact us</button>   
-                </form>
-            </div>
-       </div> -->
 
     </div>
     

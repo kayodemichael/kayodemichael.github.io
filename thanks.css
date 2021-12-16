@@ -295,6 +295,21 @@ button:hover{
     margin-top: 50px;
 }
 
+
+
+/* .about-us{
+    width: 100%;
+    height: 50px;
+   
+}
+
+.about-us h1 {
+    color:  cornflowerblue;
+    font-size: 400%;
+    margin-left: 489px;
+    align-items: center;
+} */
+
 /* CONTACT US PAGE */
 
 .first{
@@ -308,6 +323,21 @@ button:hover{
     padding-left: 200px;
     /* margin-left: 50px; */
 }
+
+/* ABOUT US PAGE */
+
+.about-us {
+    /* background-color: black; */
+    width: 100%;
+    height: 50px;
+    margin-left: 5%;
+}
+
+.about-us h2 {
+    font-size: 400%;
+    color: cornflowerblue;
+    margin-left: 430px;
+} 
 
 .word{
     width: 100%;
@@ -326,6 +356,10 @@ button:hover{
 .word h4{
     text-align: center;
 }
+
+
+
+
 .form{
     margin-left: 500px;
     align-items: center;
@@ -339,6 +373,36 @@ button:hover{
 input[type=text], {
     width: 100%;
 } */
+
+
+/* SOCIALS */
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-left: 100%;
+    /* margin-left: 50%;  */
+}
+
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: cornflowerblue;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .4s;
+} */
+
 
 /* SERMON PAGE */
 
@@ -589,6 +653,19 @@ input[type=text], {
         padding-left: 22px;
     }
 
+    .about-us {
+        margin-left: 5%;
+        
+    }
+
+    .about-us h2 {
+        /* margin-left: 60%; */
+        font-size: xx-large;
+        margin-left: 32%;
+        color: cornflowerblue;
+    }
+    
+
     .word{
         width: 100%;
         margin-right: 60%;
@@ -609,19 +686,21 @@ input[type=text], {
         padding-left: 100px;
         margin-right: 100%; */
     }
-    .about-us h1{
+
+    /* .about-us h2{
         font-size: xx-large;
         color: cornflowerblue;
         align-items: center;
-        margin-left: 38%;
-    }
+        margin-left: 33%;
+    } */
     .fcf-form-class {
         font-family: -apple-system, Arial, sans-serif;
         font-size: 1rem;
         font-weight: 400;
         color: #0000ff;
         text-align: left;
-        margin-left: 5%;
+        margin-left: 2%;
+        
     }
 
     input[type=text], select, textarea{
@@ -635,7 +714,17 @@ input[type=text], {
         resize: vertical;
       }
 
-      input[type=email], select, textarea {
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      input[type=tel], select, textarea {
         width: 100%;
         padding: 12px;
         border: 1px solid #ccc;
@@ -654,6 +743,29 @@ input[type=text], {
         border: none;
         border-radius: 4px;
       }
+
+      .social {
+          display: flex;
+          margin-left: 135px;
+      }
+
+      .social a{
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: cornflowerblue;
+        border-radius: 50%;
+        margin: 22px 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .social a:hover{
+        transform: scale(1.3);
+        transition: .4s;
+    }
     /* .form-container{
         width: 300x;
         margin-right: 100px;
