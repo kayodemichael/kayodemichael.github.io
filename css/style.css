@@ -25,7 +25,7 @@ a{
 }
 button, .box a{
     padding: 10px;
-    background-color: #c00808f6;
+    background-color: rgb(6, 112, 114);;
     color: white;
     /* text-decoration: none; */
     border: 1px solid transparent;
@@ -45,8 +45,8 @@ button, .box a{
     display: flex;
     justify-content: flex-start;
     /* align-items: center; */
+    background: rgb(6, 112, 114);
     padding: 2% 5%;
-    background: rgb(19, 186, 188);
     position: sticky;
     top: 0px;
     z-index: 8999;
@@ -78,8 +78,15 @@ color: white;
     background-color: #101010;
 }
 .nav-menu .active-link{
-    color: #c00808f6;
+    /* display: none; */
+    opacity: 0.3;
 }
+.nav-menu .active-link:hover{
+    /* display: none; */
+    /* opacity: 0.3; */
+    color: white;
+}
+
 .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -96,7 +103,7 @@ color: white;
 
 }
 .nav-link:hover {
-    color: #c00808f6;
+    opacity: 0.3;
 }
 .nav-logo {
     /* font-weight: 500; */
@@ -108,7 +115,7 @@ color: white;
     color: red;
 }
 .main{
-    padding: 2%;
+    /* padding: 2%; */
 }
 
 
@@ -117,49 +124,68 @@ color: white;
     width: 100vw;
     height: 100vh;
     max-width: 100%;
-    overflow: hidden;
+    /* position: sticky; */
 }
-
-.img-slider .slider-container {
-    position: absolute;
-    opacity: 0.7;
-    width: 300%;
-    top: 0;
-    left: 0;
-    right:0;
-    /* overflow: hidden; */
-    display: flex;
-    animation: slider 13s infinite;
-}
-.img-slider .slider-container .slide {
-    position: relative;
-    width: 100vw;
-    max-width: 100%;
+.img-slider .welcome-image{
+    background: url(/kayodemichael.github.io/img/preach.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
     height: 100%;
-    /* float: left; */
+    opacity: 0.6;
 }
-.img-slider .slider-container .slide img {
-    display: block;
-    width: 100vw;
-    max-width: 100%;
-    height: 100vh;
-  }
-  @keyframes slider {
-      0%, 25%, 100%{left: 0}
-      
-      30%, 55%{left: -100%}
-      
-      60%, 85%{left: -200%}
-  }
-  
+.img-slider .welcome-content{
+    position: absolute;
+    /* background: rgba(64, 224, 208, 0.167); */
+    top: 0;
+    background: rgba(89, 186, 188, 0.715);
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    
+    /* justify-content: center; */
+    /* margin: auto; */
+    /* opacity: 1; */
+    right: 0;
+    bottom: 0;
 
+    /* opacity: 0.7; */
+    /* position: relative; */
+}
+
+.welcome-content img{
+    margin: 0 40%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 2px rgba(40, 39, 39, 0.982);
+}
+.welcome-content div{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    /* background-color: rgb(255, 255, 255); */
+    /* display: none; */
+}
+.welcome-content h2{
+    margin-bottom: 8px;
+    font-weight: 900;
+    z-index: 333;
+
+    /* display: none; */
+    font-size: 40px;
+}
+.welcome-content p{
+    font-size: 20px;
+}
 /* img.poster{
     width: 100%;
     height: 500px;
 } */
 /* INTRO */
 .main{
-    background: rgba(211, 210, 229, 0.761);
+    background: white
 }
 .intro{
     margin-top: 5%;
@@ -188,22 +214,24 @@ color: white;
 
 button:hover, .box a:hover{
     background-color: transparent;
-    color: #c00808f6;
-    border: 2px solid #c00808f6;
+    color: rgb(6, 112, 114);
+    border: 2px solid rgb(6, 112, 114);
     cursor: pointer;
 }
 
 .sermon, .events, .testimony{
-    background: rgba(211, 210, 229, 0.761);
+    background: rgba(115, 138, 135, 0.283);
+    padding: 2%;
     width: 100%;
     margin-top: 5%;
     padding-top: 20px;
     /* background: red; */
     padding-bottom: 20px ;
     /* padding: 0px ; */
-    box-shadow: 0 0 20px 2px rgb(142 142 142 / 25%);
+    box-shadow: 0 0 20px 2px rgba(44, 112, 201, 0.25);
     /* margin-bottom: 40px; */
 }
+
  /* sermon */
 .sermon, .events, .testimony{
     text-align: center;
@@ -288,11 +316,12 @@ button:hover, .box a:hover{
 }
 .event-flex .event-div .event-detail .event-dateset div span{
     
-    color: #b7244e;;
+    /* color:  rgba(176, 32, 51, 0.993);; */
     /* justify-self: left; */
+    color: #467ac3;
 }
 .event-flex .event-div .event-detail .event-dateset div small{
-    color: #475569;
+    color: #467ac3;
     
     /* justify-self: left; */
 }
@@ -304,67 +333,68 @@ button:hover, .box a:hover{
 
 /* .testimony */
 .testimony{
-    /* background-color: red; */
+    background: rgba(14, 11, 11, 0.9);
+    box-shadow: 0 10px 27px rgba(213, 215, 230, 0.331);
+    padding-left: 0;
+    padding-right: 0;
+    /* position: relative; */
+    color: white
 }
-.testimony .testi-flex{
-    margin-top: 5%;
+.testimony .title h2{
+    color: white;
+}
+.testi-flex{
+    /* position: relative; */
     display: flex;
-    justify-content: space-around;
-}
-.testimony .testi-flex div{
-    flex-basis: 30%;
-}
-.testimony .testi-flex .who, .testimony .testi-flex p{
-    text-align: right;
-}
-.testimony .testi-slider{
-    position: relative;
-    width: 100vw;
-    height: 45vh;
-    max-width: 100%;
+    /* position:absolute; */
+    justify-content: start;
+    margin-bottom: 100px;
+    /* margin-left: -20px; */
+    /* transform: translateX(-100%); */
     overflow: hidden;
 }
-.testi-slider .testi-flex{
-    position: absolute;
-    width: 300%;
-    justify-content:left;
-    /* margin-right: 1000px; */
-    top: 0;
-
-    /* background-color: red; */
-    left: 0;
-    right: 0;
-    animation: testiSlider 12s infinite;
+/* .testi-flex>div:first-child{
+    margin-left: 0;
+} */
+.testi-flex>div{
+    /* position: absolute; */
     display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    max-width: 100vw;
+    transition: 1s;
 }
+
 .testi-flex .testi-div{
-    /* flex-basis: 0.5%; */
-    margin-right: 2%;
-    max-width: 10%;
-    /* background: rebeccapurple; */
+    min-width: 40vw;
+    /* background: #467ac3; */
+    margin: 20px 50px;
     /* display: none; */
-    /* max-width: 3; */
 }
+
+
 .testimony .testi-flex .testi{
     font-weight: normal;
     font-style: italic;
 }
-.testimony .testi-flex .who{
-    margin-top: 5px;
+.testi-div h3{
+    font-size: 20px;
+    /* font-weight: normal; */
+    letter-spacing: 3px;
+    line-height: 30px;
+    text-align: left;
+    /* display: none; */
+    /* font-style: italic; */
+    
+}
+.testimony .testi-flex .detail{
+    margin-top: 10px;
+    text-align: right;
 }
 .testimony button{
     font-size: 15px;
 }
-@keyframes testiSlider {
-    0%,5%, 100%{left: 0}
-    30%{left:-37%}
-    60%{left: -74%}
-    90%{left: -111%}
-    /* 60%{left: -99%} */
-    /* 80%{left: -132%} */
-    /* 60%{left: -108%}
-    80%{left: -144%} */
-}
+
 
 
 .page-footer{
@@ -389,7 +419,7 @@ button:hover, .box a:hover{
 .page-footer a:hover{
     /* font-size: 17px; */
     font-weight: bold;   
-    color:#c00808f6;
+    /* color: rgb(6, 112, 114); */
 }
 .page-footer .footer-first-div{
     display: flex;
@@ -697,33 +727,39 @@ button, .box a{
     margin-bottom: 50px;
 /* background: red; */
 }
-
-.testimony .testi-slider{
-    position: relative;
-    height: 40vh;
-    /* overflow: hidden; */
+/* testimony */
+.testimony .title p{
+    margin-left: 10px;
 }
-.testi-slider .testi-flex{
-    /* animation: none; */
-/* anima */
-    /* animation-timing-function: 2s; */
-    animation: testiSlider 30s infinite;
+.testi-flex>div{
+    min-width: 200%;
+    max-width: 200vw;
+    /* flex-direction: column; */
 }
 .testi-flex .testi-div{
-    max-width: 90vw;
-    min-width: 90vw;
-    text-align: justify;
+    /* justify-self: center; */
+    min-width: 100vw;
+    margin: 0;
+    padding: 0 5px;
+
 }
-@keyframes testiSlider {
-    0%, 10%, 100%{left: 0}
-    25%{left:-100%}
-    40%{left: -200%}
-    55%{left: -300%}
-    70%{left: -400%}
-    85%{left: -500%}
-    /* 90%{left: -111%} */
+.testi-div h3{
+    
+    text-align: center;
+    /* display: none; */
+    /* font-style: italic; */
+    
 }
 
+.testimony .testi-flex .detail{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    /* display: none; */
+}
+.detail p{
+    text-align: center;
+}
 .page-footer{
 
     padding-top: 40px;
