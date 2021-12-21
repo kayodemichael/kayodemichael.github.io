@@ -631,6 +631,16 @@ input[type=text], {
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
+    .img-slider{
+        height: 80vh;;
+        /* position: sticky; */
+    }
+    .img-slider .welcome-image{
+        height: 80vh;
+    }
+    .img-slider .welcome-image img{
+        height: 80vh;
+    }
     .img-slider .welcome-content{
         /* background: rgba(64, 224, 208, 0.167); */
         display: flex;
@@ -644,7 +654,6 @@ input[type=text], {
         margin: 0 auto;
         margin-top: 80px;
         width: 250px;
-        
         height: 250px;
     }
     .welcome-content h2{
