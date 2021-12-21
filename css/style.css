@@ -127,7 +127,8 @@ color: white;
     /* position: sticky; */
 }
 .img-slider .welcome-image{
-    background: url(/kayodemichael.github.io/img/preach.jpg);
+    /* background: url(/kayodemichael.github.io/img/preach.jpg); */
+    background-image: url(preach.jpg); 
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
