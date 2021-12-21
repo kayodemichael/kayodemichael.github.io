@@ -127,6 +127,18 @@ color: white;
     /* position: sticky; */
 }
 .img-slider .welcome-image{
+    /* background: url(/kayodemichael.github.io/img/preach.jpg); *
+    /* background-repeat: no-repeat; */
+    /* background-size: 100%; */
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    opacity: 0.9;
+}
+.img-slider .welcome-image img{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
 }
 .img-slider .welcome-content{
     position: absolute;
