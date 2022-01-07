@@ -82,6 +82,8 @@ body{
     width: clamo(300px, 50vw, 600px);
 }
 
+
+
 /* for tablet devices */
 @media (max-width: 1023px){
 
