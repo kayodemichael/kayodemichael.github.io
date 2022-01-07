@@ -54,11 +54,7 @@ button, .box a{
 .navbar>ul li a{
     font-weight: 600;
     font-size: 1.7rem;
-<<<<<<< HEAD
     color: white;
-=======
-color: white;
->>>>>>> c78ee6492ef3e881854aedadb8c81a879d6ebfab
 }
 .navbar>a{
     margin-right: 100px;
@@ -174,16 +170,10 @@ color: white;
     box-shadow: 0 0 20px 2px rgba(40, 39, 39, 0.982);
 }
 .welcome-content div{
-<<<<<<< HEAD
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     margin-top: 90px;
     color: black;
-=======
-    text-align: center;
-    margin-top: 10px;
-    color: white;
->>>>>>> c78ee6492ef3e881854aedadb8c81a879d6ebfab
     /* background-color: rgb(255, 255, 255); */
     /* display: none; */
 }
@@ -417,30 +407,21 @@ button:hover, .box a:hover{
 
 
 .page-footer{
-<<<<<<< HEAD
     margin-top: 90px;
     width: 105%;
     margin-left: -67px; 
-=======
->>>>>>> c78ee6492ef3e881854aedadb8c81a879d6ebfab
     padding-top: 3%;
     padding-bottom: 0;
     background: rgb(6, 112, 114);
     font-size: 20px;
     color: #ccc
-<<<<<<< HEAD
     
-=======
->>>>>>> c78ee6492ef3e881854aedadb8c81a879d6ebfab
     /* font-weight: normal; */
 
 }
 .page-footer h5{
     margin-bottom: 20px;
-<<<<<<< HEAD
     
-=======
->>>>>>> c78ee6492ef3e881854aedadb8c81a879d6ebfab
 }
 .page-footer p, .page-footer a{
     font-size: 15px;
@@ -510,7 +491,6 @@ button:hover, .box a:hover{
     cursor: pointer;
 }
 
-<<<<<<< HEAD
 /* SERMON PAGE */
 
 .sermons {
@@ -589,27 +569,6 @@ button:hover, .box a:hover{
     color: cornflowerblue;
     margin-left: 430px;
 } 
-=======
-
-
-
-
-
-
-/* CONTACT US PAGE */
-
-.first{
-    margin-top: 10px;
-    width: 100%;
-}
-.find img{
-    align-items: center;
-    width: 80%;
-    height: 690px;
-    padding-left: 200px;
-    /* margin-left: 50px; */
-}
->>>>>>> c78ee6492ef3e881854aedadb8c81a879d6ebfab
 
 .word{
     width: 100%;
@@ -623,10 +582,7 @@ button:hover, .box a:hover{
     align-items: center;
     justify-content: center;
     margin-left: 400px;
-<<<<<<< HEAD
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-=======
->>>>>>> c78ee6492ef3e881854aedadb8c81a879d6ebfab
 }
 .word h4{
     text-align: center;
@@ -637,7 +593,6 @@ button:hover, .box a:hover{
     
    
 }
-<<<<<<< HEAD
 .fcf-form-class {
     border: 2px solid black;
     width: 80%;
@@ -745,73 +700,6 @@ input[type=text], select, textarea{
   /* FOR MOBILE PHONES */
 
 @media only screen and (max-width: 767px){
-=======
-
-/* .form-container{
-    
-}
-input[type=text], {
-    width: 100%;
-} */
-
-/* SERMON PAGE */
-
-.sub{
-    width: 100%;
-    margin-top: 60px;
-    padding-left: 30px;
-    
-}
-
-.front{
-    
-}
-
-.front h1{
-    margin-bottom: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 510px; 
-    font-size: 350%;
-    font-weight: 200;
-
-}
-.front h4{
-    font-weight: 500;
-    align-items: center;
-    justify-content: center;
-    margin-left: 150px;
-}
-
-.cervix{
-    margin-top: 50px;
-    align-items: center;
-    justify-content: center;
-   
-}
-.up{
-    border-bottom: 1px solid black;
-}
-.video{
-    margin-left: 400px;
-    padding-top: 50px;
-}
-
-.video video{
-    width: 50%;
-    height: 50%;
-}
-
-.words{
-    margin-left: 400px;
-}
-.words h1{
-    font-size: 200%;
-}
-
-
-@media only screen and (max-width: 1000px){
->>>>>>> c78ee6492ef3e881854aedadb8c81a879d6ebfab
     .navbar{
         justify-content: space-between;
     }
@@ -870,13 +758,10 @@ input[type=text], {
         align-content: center;
         /* display: none; */
     }
-<<<<<<< HEAD
 
     .welcome-content div{
         margin-top: 160px;
     }
-=======
->>>>>>> c78ee6492ef3e881854aedadb8c81a879d6ebfab
     .welcome-content img{
         margin: 0 auto;
         margin-top: 80px;
@@ -925,12 +810,7 @@ input[type=text], {
     font-size: 18px;
 }
 .title h2{
-<<<<<<< HEAD
     margin-bottom: 5px;
-=======
-    /* font-size: 1000; */
-    margin-bottom: 30px;
->>>>>>> c78ee6492ef3e881854aedadb8c81a879d6ebfab
     text-align: left;
 
 }
@@ -1091,12 +971,6 @@ button, .box a{
     margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> c78ee6492ef3e881854aedadb8c81a879d6ebfab
 /* ABOUT US PAGE */
 
     .first{
@@ -1129,14 +1003,6 @@ button, .box a{
     .word h4{
         text-align: center;
     }
-<<<<<<< HEAD
-=======
-    /* .contact-form{
-        width: 100%;
-        padding-left: 100px;
-        margin-right: 100%; */
-    }
->>>>>>> c78ee6492ef3e881854aedadb8c81a879d6ebfab
     .about-us h1{
         font-size: xx-large;
         color: cornflowerblue;
@@ -1152,20 +1018,6 @@ button, .box a{
         margin-left: 5%;
     }
 
-<<<<<<< HEAD
-=======
-    /* input[type=text], select, textarea{
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
-      } */
-
->>>>>>> c78ee6492ef3e881854aedadb8c81a879d6ebfab
       input[type=email], select, textarea {
         width: 100%;
         padding: 12px;
@@ -1177,7 +1029,6 @@ button, .box a{
         resize: vertical;
       }
 
-<<<<<<< HEAD
 
     /* SERMON PAGE */
     
@@ -1227,84 +1078,6 @@ button, .box a{
     }
 
 
-=======
-      
-      /* button[type=submit] {
-        background-color: #5DADE2;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-      } */
-    /* .form-container{
-        width: 300x;
-        margin-right: 100px;
-    }
-    .form-container input:first-child{
-        display: inline-block;
-        width: 120%;
-        padding: 14px 130px 14px 15px;
-        border: 2px solid #f9004d;
-        outline: none;
-        border-radius: 30px;
-    } */
- 
-
-    /* SERMON PAGE */
-    .sub{
-        width: 100%;
-        margin-top: 60px;
-        padding: 23px;
-
-    }
-    .front{
-        line-height: 1pc;
-        width: 80%;
-    }
-    .front h1{
-        line-height: 1.5;
-        margin-bottom: 20px;
-        margin-left: 100px;
-        /* margin-right: 600px; */
-        font-size: xx-large;
-        font-weight: 100;
-    
-    }
-    .front h4{
-        font-weight: 500;
-        margin-left: 70px;
-        font-size: 120%;
-        line-height: 25px;
-    }
-    .dot{
-        font-size: 150%;
-    }
-
-    .cervix {
-        margin-top: 70px;
-    }
-    .up {
-        border-bottom: 0.9px solid black;
-    }
-    .video{
-        width: 90%;
-        height: 80%;
-        margin-left: 50px;
-        /* padding-left: 22px; */
-    }
-    .video video{
-         width: 75%; 
-    }
-    .words {
-        padding: 30px;
-        margin-left: 50px;
-    }
-    .words h1{
-        font-size:x-large;
-        
-    }
-
->>>>>>> c78ee6492ef3e881854aedadb8c81a879d6ebfab
     /* EVENTS PAGE */
     .event{
         width: 100%;
@@ -1329,7 +1102,6 @@ button, .box a{
         margin-bottom: 20px;
     }
 
-<<<<<<< HEAD
     .page-footer {
         width: 100%;
         max-width: 100%;
@@ -1343,10 +1115,3 @@ button, .box a{
     
 
   
-=======
-    
-
-  
-
-
->>>>>>> c78ee6492ef3e881854aedadb8c81a879d6ebfab
