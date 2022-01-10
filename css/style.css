@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Roboto+Slab:wght@200;300;400;500;600&display=swap');
 
 *{
-    margin: 0;
+    margin: 0; 
     padding: 0;
     box-sizing: border-box;
 }
@@ -740,14 +740,14 @@ input[type=text], select, textarea{
         transform: translateY(-8px) rotate(-45deg);
     }
     .img-slider{
-        height: 80vh;;
+        height: 50vh;;
         /* position: sticky; */
     }
     .img-slider .welcome-image{
         height: 80vh;
     }
     .img-slider .welcome-image img{
-        height: 80vh;
+        height: 50vh;
     }
     .img-slider .welcome-content{
         /* background: rgba(64, 224, 208, 0.167); */
@@ -760,7 +760,7 @@ input[type=text], select, textarea{
     }
 
     .welcome-content div{
-        margin-top: 160px;
+        margin-bottom: 160px;
     }
     .welcome-content img{
         margin: 0 auto;
